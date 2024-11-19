@@ -1,0 +1,1948 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+* h1 {
+  font-family: "Outfit", sans-serif !important;
+}
+* h2 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+}
+* p {
+  font-family: "Outfit", sans-serif !important;
+  margin: 0;
+}
+* button {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  height: 90px;
+  top: 40px;
+  left: 100px;
+  right: 100px;
+  z-index: 9999999;
+  justify-content: space-between;
+  background-color: white;
+  padding-inline: 30px;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  align-content: center !important;
+  padding-top: 15px;
+}
+nav .leftSide {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+nav .leftSide button {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  transition: 0;
+  margin-bottom: 15px;
+}
+nav .leftSide button a {
+  text-decoration: none;
+  color: black;
+}
+nav .leftSide button svg {
+  height: 16px;
+  width: 16px;
+  color: white !important;
+}
+nav .rightSide {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: row;
+}
+nav .rightSide input {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+nav .rightSide label {
+  display: none;
+}
+nav .rightSide input {
+  display: none;
+  opacity: 0;
+}
+nav .rightSide input:checked ~ .smallMenu {
+  display: none;
+  transform: translate(0);
+  transition: 0.5s;
+}
+nav .rightSide .smallMenu {
+  display: none;
+  background-color: #fff9af;
+  width: 250px;
+  height: 100vh;
+  transform: translate(-2000px);
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+nav .rightSide .smallMenu ul {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 30%;
+  padding: 0;
+}
+nav .rightSide .smallMenu ul .log {
+  background-color: #fff9af;
+}
+nav .rightSide .smallMenu ul button {
+  padding: 5px 20px;
+  margin: 0;
+}
+nav .rightSide .smallMenu ul #home {
+  border: none;
+  background-color: #fff9af;
+}
+nav .rightSide .smallMenu ul #home a {
+  text-decoration: none;
+}
+nav .rightSide ul {
+  gap: 80px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+nav .rightSide ul a {
+  text-decoration: none;
+  color: black;
+}
+nav .rightSide ul a:hover {
+  text-decoration: underline;
+}
+nav .rightSide ul .log {
+  border: none;
+  background-color: white;
+  font-size: 18px;
+  gap: 10px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+nav .rightSide ul .log i {
+  font-size: 25px;
+}
+nav .rightSide ul .log:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+nav .rightSide ul .log:hover i {
+  color: black;
+}
+nav .rightSide ul .book {
+  background-color: #0a2323;
+  margin-left: -20px;
+  color: white;
+  font-size: 16px;
+  padding: 10px 45px;
+  border-radius: 50px;
+  border: 1px solid #0a2323;
+  transition: 0.5s;
+}
+nav .rightSide ul .book:hover {
+  background-color: white;
+  border: 1px solid #0a2323;
+  color: black;
+  transition: 0.5s;
+}
+
+.banner {
+  background-image: url("./Img/Home_Page/kitchen.webp");
+  height: 950px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: 300px;
+  display: flex;
+  justify-content: start !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.banner .inBanner {
+  position: absolute;
+  height: 300px;
+  width: 530px;
+  top: 200px;
+  left: 100px;
+  right: 100px;
+}
+.banner .inBanner ul {
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  gap: 20px;
+}
+.banner .inBanner ul h1 {
+  font-size: 56px;
+  font-weight: 400;
+  color: white;
+}
+.banner .inBanner ul p {
+  color: white;
+  font-size: 22px;
+}
+.banner .inBanner ul button {
+  padding: 15px 55px;
+  border-radius: 30px;
+  border: 1px solid white;
+  font-size: 18px;
+  font-weight: 100;
+  transition: 0.5s;
+}
+.banner .inBanner ul button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  transition: 0.5s;
+}
+.banner .blank {
+  position: absolute;
+  height: 500px;
+  width: 745px;
+  background-color: #fff9af;
+  right: 100px;
+  bottom: -150px;
+  flex-direction: column;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.banner .blank h1 {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  font-size: 33px;
+  font-weight: 350;
+  transform: translate(-50%);
+}
+.banner .blank p {
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  font-size: 18px;
+  font-weight: 300;
+  transform: translate(-50%);
+}
+.banner .blank .grid-container {
+  height: 350px;
+  width: 740px;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  padding: 10px;
+  flex-direction: column;
+}
+.banner .blank .grid-container .labelPos {
+  position: relative;
+}
+.banner .blank .grid-container label {
+  position: absolute;
+  top: -5px;
+  left: 11px;
+}
+.banner .blank .grid-container input {
+  background-color: #fff9af;
+  border: 1px solid black;
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.banner .blank .grid-container select {
+  background-color: #fff9af;
+  border: 1px solid black;
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.banner .blank .grid-container #service {
+  background-color: #fff9af;
+  border: 1px solid black;
+  width: 95%;
+  padding: 10px;
+  border-radius: 10px;
+}
+.banner .blank .grid-container .item1 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1;
+}
+.banner .blank .grid-container .item2 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 1;
+}
+.banner .blank .grid-container .item3 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  grid-column: 3;
+  grid-row: 1;
+}
+.banner .blank .grid-container .item4 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 2;
+}
+.banner .blank .grid-container .item5 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 2;
+}
+.banner .blank .grid-container .item6 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  grid-column: 3;
+  grid-row: 2;
+}
+.banner .blank .grid-container .item7 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 3;
+}
+.banner .blank .grid-container .item8 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  grid-column: 2/span 2;
+  grid-row: 3;
+}
+.banner .blank .grid-container .item9 {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: row;
+  grid-column: 2;
+  grid-row: 4;
+}
+.banner .blank .grid-container .item9 button {
+  border: 1px solid #0a2323;
+  background-color: #0a2323;
+  color: white;
+  padding: 10px 29.5%;
+  border-radius: 40px;
+  transition: 0.5s;
+}
+.banner .blank .grid-container .item9 button:hover {
+  border: 1px solid #0a2323;
+  background-color: #fff9af;
+  color: black;
+  transition: 0.5s;
+}
+
+.shiny {
+  margin-top: 100px;
+  flex-direction: column;
+  top: 300px;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: start !important;
+  align-items: start !important;
+  align-content: center !important;
+}
+.shiny h1 {
+  font-size: 45px;
+  font-weight: 350;
+  width: 100%;
+  padding: 10px;
+  padding-left: 0;
+}
+.shiny .shinyCards {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: row;
+}
+.shiny .shinyCards h2 {
+  font-size: 20px;
+}
+.shiny .shinyCards .shinyCard {
+  display: flex;
+  justify-content: start !important;
+  align-items: start !important;
+  align-content: center !important;
+  background-color: #fff9af;
+  text-align: start;
+  flex: 1;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 340px;
+  height: 300px !important;
+  min-width: 234px;
+  max-width: 25%;
+  transition: all 0.3s ease;
+}
+.shiny .shinyCards .shinyCard .shinyCardContent {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  width: 234px;
+  padding-left: 0;
+  gap: 10px;
+}
+.shiny .shinyCards .shinyCard .shinyCardContent p {
+  font-weight: 250;
+}
+.shiny .shinyCards .shinyCard .shinyCardContent svg {
+  height: 15px;
+}
+
+.grey {
+  margin-top: 10px;
+  gap: 50px;
+  background-color: #4c5b5c;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+.grey h1,
+.grey h2,
+.grey p {
+  color: white;
+}
+.grey h1 {
+  font-weight: 300;
+  font-size: 45px;
+}
+.grey p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.grey .greyTitle {
+  padding: 50px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  top: 40px;
+  gap: 10px;
+  flex-direction: column;
+}
+.grey button {
+  bottom: 50px;
+}
+.grey .greyCards {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  align-content: center !important;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+}
+.grey .greyCards .greyCard {
+  position: relative;
+  height: 70vh;
+  width: 33%;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 50px;
+  border-radius: 10px;
+  background-size: 100%;
+  transition: 0.5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: start !important;
+  align-items: end !important;
+  align-content: center !important;
+}
+.grey .greyCards .greyCard h2 {
+  position: absolute;
+  bottom: 10px;
+  color: black;
+}
+.grey .greyCards .greyCard:hover {
+  transform: scale(1.05);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+}
+.grey .greyCards .card1 {
+  flex: 1;
+  background-image: url("./Img/Home_Page/grey_1.webp");
+  background-size: cover;
+}
+.grey .greyCards .card2 {
+  flex: 1;
+  background-image: url("./Img/Home_Page/grey_2.webp");
+  background-size: cover;
+}
+.grey .greyCards .card3 {
+  flex: 1;
+  background-image: url("./Img/Home_Page/grey_3.webp");
+  background-size: cover;
+}
+.grey button {
+  border: 1px solid white;
+  background-color: white;
+  padding: 15px 45px;
+  border-radius: 40px;
+  transition: 0.5s;
+  margin: 50px;
+}
+.grey button p {
+  color: black;
+}
+.grey button:hover {
+  border: 1px solid white;
+  background-color: #4c5b5c;
+  transition: 0.5s;
+}
+.grey button:hover p {
+  color: white;
+}
+
+.feat {
+  height: 216.8px;
+  margin-top: 100px !important;
+  background-color: #fff9af;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  gap: 30px;
+}
+.feat #stella {
+  font-family: "Updock", cursive !important;
+}
+.feat #volve {
+  font-family: "Playwrite GB S", cursive !important;
+}
+.feat #foreva {
+  font-family: "Updock", serif !important;
+}
+.feat h1 {
+  font-weight: 250;
+  font-size: 50px;
+}
+.feat ul {
+  flex-direction: row;
+  width: 100%;
+  gap: 50px;
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.feat ul p {
+  font-size: 35px;
+}
+
+.BefAft {
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  height: 1187.8px;
+  flex-direction: column;
+}
+.BefAft .carousel-control-prev {
+  display: flex;
+  justify-content: start;
+}
+.BefAft .carousel-control-next {
+  display: flex;
+  justify-content: end;
+}
+.BefAft h1 {
+  font-size: 45px;
+  font-weight: 300;
+}
+.BefAft .carousel-inner {
+  display: flex;
+  flex-direction: row;
+}
+.BefAft .carousel-inner .carousel-item {
+  height: 616px;
+  width: 1000px;
+  position: relative;
+}
+.BefAft .carousel-inner .carousel-item p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.BefAft .carousel-inner .carousel-item h2 {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 25px;
+}
+.BefAft .carousel-inner .carousel-item .left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: flex;
+  width: 480px;
+  height: 458px;
+  transform: translate(0, -50%);
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.BefAft .carousel-inner .carousel-item .left img {
+  border-radius: 20px;
+}
+.BefAft .carousel-inner .carousel-item .right {
+  position: absolute;
+  flex: 1;
+  right: 0;
+  top: 50%;
+  display: flex;
+  width: 480px;
+  height: 458px;
+  transform: translate(0, -50%);
+  justify-content: start;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.BefAft .carousel-inner .carousel-item .right img {
+  border-radius: 20px;
+}
+
+.HIW {
+  height: 475px;
+  background-image: url("./Img/Home_Page/HIW.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+.HIW .parent {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+.HIW .parent h1 {
+  color: white;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.HIW .parent .icons {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: row;
+  gap: 20px;
+}
+.HIW .parent .icons .arrow {
+  margin-top: -80px;
+}
+.HIW .parent .icons i {
+  color: #fff7bd;
+  height: 14px;
+  width: 42px;
+}
+.HIW .parent .icons .icon {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  text-align: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.HIW .parent .icons .icon p {
+  height: 55.8px;
+  width: 190px;
+  color: white;
+}
+.HIW .parent .icons .icon svg {
+  height: 74px;
+  width: 74px;
+}
+
+.plans {
+  height: 781px;
+  background-color: #4c5b5c;
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.plans button {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.plans button p {
+  margin: 1% 0;
+}
+.plans .leftPlans {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  width: 55%;
+}
+.plans .leftPlans .inside {
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  gap: 10px;
+}
+.plans .leftPlans .inside h1 {
+  width: 350px;
+  height: 98.4px;
+  font-size: 43px;
+}
+.plans .leftPlans .inside p {
+  font-size: 17.5px;
+  width: 387.9px;
+  height: 74.2px;
+}
+.plans .leftPlans .inside button {
+  height: 56px;
+  width: 216px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid white;
+  transition: 0.5s;
+}
+.plans .leftPlans .inside button p {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.plans .leftPlans .inside button:hover {
+  background-color: #4c5b5c;
+}
+.plans .leftPlans .inside button:hover p {
+  color: white;
+}
+.plans .rightPlans {
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+}
+.plans .rightPlans .card {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  height: 510px;
+  width: 411px;
+  border-radius: 10px;
+}
+.plans .rightPlans .card .topPlans {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  background-color: #fff9af;
+  height: 260px;
+  width: 100%;
+  flex-direction: column;
+}
+.plans .rightPlans .card .topPlans button {
+  padding: 12px 140px;
+  border-radius: 50px;
+}
+.plans .rightPlans .card .topPlans #best {
+  color: white;
+  background-color: black;
+  padding: 0 10px;
+  font-size: 13px;
+  position: absolute;
+  top: -12px;
+}
+.plans .rightPlans .card .topPlans h2 {
+  font-size: 20px;
+}
+.plans .rightPlans .card .topPlans .money {
+  position: relative;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.plans .rightPlans .card .topPlans .money h1 {
+  font-size: 60px;
+  font-weight: 350;
+}
+.plans .rightPlans .card .topPlans .money #dolar {
+  position: absolute;
+  font-size: 25px;
+  top: 0;
+  left: -17px;
+}
+.plans .rightPlans .card .topPlans button {
+  background-color: #0a2323;
+  border: 1px solid #0a2323;
+  transition: 0.5s;
+}
+.plans .rightPlans .card .topPlans button p {
+  color: white;
+}
+.plans .rightPlans .card .topPlans button:hover {
+  background-color: #fff9af;
+}
+.plans .rightPlans .card .topPlans button:hover p {
+  color: black;
+}
+.plans .rightPlans .card .botPlans {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.plans .rightPlans .card .botPlans ul {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.plans .rightPlans .card .botPlans ul li {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  margin-left: -35px;
+}
+.plans .rightPlans .card .botPlans ul li p {
+  gap: 10px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+
+.cleanic {
+  height: 752px;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: row;
+}
+.cleanic svg {
+  height: 11px;
+  width: 11px;
+}
+.cleanic .leftPic {
+  width: 34%;
+  height: 491px;
+  background-image: url("./Img/Home_Page/cleanic.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cleanic .rightCleanic {
+  height: 491px;
+  width: 66%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-inline: 10%;
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+.cleanic .rightCleanic h1 {
+  height: 45.6px;
+  width: 489.23px;
+}
+.cleanic .rightCleanic button {
+  height: 56px;
+  width: 203px;
+  border-radius: 40px;
+  background-color: #0a2323;
+  border: 1px solid #0a2323;
+  transition: 0.5s;
+}
+.cleanic .rightCleanic button p {
+  margin: 0;
+  color: white;
+}
+.cleanic .rightCleanic button:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+.cleanic .rightCleanic button:hover p {
+  color: black;
+}
+.cleanic .rightCleanic .insideRightCleanic {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  gap: 30px;
+}
+.cleanic .rightCleanic .insideRightCleanic p {
+  height: 44.8px;
+  width: 253px;
+}
+.cleanic .rightCleanic .insideRightCleanic h2 {
+  height: 30.8px;
+  width: 253px;
+  font-size: 23px;
+}
+.cleanic .rightCleanic .insideRightCleanic .leftInside {
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  margin-right: 0;
+}
+.cleanic .rightCleanic .insideRightCleanic .leftInside .leftInsideFirst {
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.cleanic .rightCleanic .insideRightCleanic .leftInside .leftInsideSecond {
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.cleanic .rightCleanic .insideRightCleanic .rightInside {
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  height: 100%;
+  width: 500%;
+}
+.cleanic .rightCleanic .insideRightCleanic .rightInside .rightInsideFirst {
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.cleanic .rightCleanic .insideRightCleanic .rightInside .rightInsideSecond {
+  display: flex;
+  justify-content: center !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.shelves {
+  width: 100%;
+  height: 728px;
+  background-image: url("./Img/Home_Page/shelves.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ourPlans {
+  padding-top: 200px;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+.ourPlans .ourPlansTitle {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+.ourPlans .ourPlansTitle h2 {
+  text-align: center;
+}
+.ourPlans .ourPlansCards {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  align-content: center !important;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  gap: 10px;
+}
+.ourPlans .ourPlansCards .ourPlansCard {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  height: 500px;
+  width: 27vw;
+  border-radius: 10px;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  background-color: #fff9af;
+  height: 260px;
+  width: 100%;
+  flex-direction: column;
+  border: 1px solid black;
+  border-bottom: none;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans button {
+  border-radius: 50px;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans #best {
+  color: white;
+  background-color: black;
+  padding: 0 10px;
+  font-size: 13px;
+  position: absolute;
+  top: -12px;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans h2 {
+  font-size: 20px;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans .money {
+  position: relative;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans .money h1 {
+  font-size: 60px;
+  font-weight: 350;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans .money #dolar {
+  position: absolute;
+  font-size: 25px;
+  top: 0;
+  left: -17px;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans button {
+  margin-top: 20px;
+  background-color: #0a2323;
+  border: 1px solid #0a2323;
+  height: 50px;
+  width: 20vw;
+  transition: 0.5s;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans button p {
+  color: white;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans button:hover {
+  background-color: #fff9af;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurTopPlans button:hover p {
+  color: black;
+}
+.ourPlans .ourPlansCards .ourPlansCard #ourPlansCard1,
+.ourPlans .ourPlansCards .ourPlansCard #ourPlansCard2 {
+  background-color: white !important;
+}
+.ourPlans .ourPlansCards .ourPlansCard #ourPlansCard1 button:hover,
+.ourPlans .ourPlansCards .ourPlansCard #ourPlansCard2 button:hover {
+  background-color: white;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurBotPlans {
+  width: 100%;
+  height: 250px;
+  border: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurBotPlans ul {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurBotPlans ul li {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  margin-left: -35px;
+}
+.ourPlans .ourPlansCards .ourPlansCard .OurBotPlans ul li p {
+  gap: 10px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+
+.ourServices {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  max-width: calc(100% - 200px);
+  margin: 0 auto;
+  flex-direction: column;
+  height: 1955px;
+  gap: 100px;
+}
+.ourServices .ourServiceTitle {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.ourServices .ourServicesBooking {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.ourServices .ourServicesBooking .ourServicesInside {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: row;
+  gap: 20px;
+  height: 140px;
+  width: 100%;
+}
+.ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideLeftSide {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  flex-direction: row;
+  gap: 20px;
+  width: 50%;
+}
+.ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideLeftSide img:hover {
+  cursor: pointer;
+  filter: brightness(0.5);
+}
+.ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideLeftSide .ourServicesInsider {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+  height: 140px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideLeftSide .ourServicesInsider button {
+  border: none;
+  background-color: white;
+}
+.ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideLeftSide .ourServicesInsider a {
+  color: black;
+}
+.ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideRightSide {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: row;
+  width: 50%;
+  height: 140px;
+}
+.ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideRightSide button {
+  padding: 5px 20px;
+  border-radius: 30px;
+  border: 1px solid #0a2222;
+  background-color: #0a2222;
+  transition: 0.5s;
+}
+.ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideRightSide button p {
+  color: white;
+}
+.ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideRightSide button:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+.ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideRightSide button:hover p {
+  color: #0a2222;
+}
+
+footer {
+  background-color: #fff9af;
+  height: 309px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+footer a {
+  text-decoration: none;
+  color: #0a2323;
+}
+footer .bord {
+  height: 205.6px;
+  width: 268.3px;
+}
+footer button {
+  border: none;
+  background-color: #fff9af;
+}
+footer .div1 {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+footer .div1 #divButton {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  border: none;
+  background-color: #fff9af;
+  font-size: 20px;
+  transition: 0;
+}
+footer .div1 #divButton svg {
+  height: 16px;
+  width: 16px;
+  color: white !important;
+}
+footer .div1 #book {
+  height: 56px;
+  width: 194px;
+  border: 1px solid #0a2323;
+  background-color: #0a2323;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+footer .div1 #book p {
+  color: white;
+}
+footer .div1 #book:hover {
+  background-color: #fff9af;
+  transition: 0.5;
+}
+footer .div1 #book:hover p {
+  color: black;
+}
+footer .div2 {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+footer .div2 ul {
+  display: flex;
+  justify-content: start !important;
+  align-items: start !important;
+  align-content: center !important;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+footer .div3 {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+footer .div3 ul {
+  display: flex;
+  justify-content: start !important;
+  align-items: start !important;
+  align-content: center !important;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+footer .div3_2 {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+footer .div3_2 ul {
+  display: flex;
+  justify-content: start !important;
+  align-items: start !important;
+  align-content: center !important;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  gap: 22px;
+}
+footer .div4 {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: start !important;
+  align-content: center !important;
+  flex-direction: column;
+}
+footer .div4 ul {
+  display: flex;
+  justify-content: start !important;
+  align-items: start !important;
+  align-content: center !important;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+@media (max-width: 1165px) {
+  #mallMenuLabel {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #smallCheck {
+    display: block;
+  }
+  #smallMenu {
+    display: block;
+  }
+  .bigMenu {
+    display: none;
+  }
+  .cleanic {
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cleanic .rightCleanic {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap: 50px;
+    padding: 0;
+  }
+  .cleanic .rightCleanic h1 {
+    width: 200px;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+  }
+  .cleanic .rightCleanic .insideRightCleanic {
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    width: 100%;
+  }
+  .cleanic .rightCleanic .insideRightCleanic .leftInside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .cleanic .rightCleanic .insideRightCleanic .leftInside h2 {
+    height: 50px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .cleanic .rightCleanic .insideRightCleanic .leftInside p {
+    height: 70px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .cleanic .rightCleanic .insideRightCleanic .rightInside {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .cleanic .rightCleanic .insideRightCleanic .rightInside h2 {
+    height: 50px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .cleanic .rightCleanic .insideRightCleanic .rightInside p {
+    height: 70px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .ourServices {
+    margin-top: 200px;
+    gap: 100px;
+    height: 2500px;
+  }
+  .ourServices .ourServicesBooking .ourServicesInside {
+    flex-direction: column;
+    height: 280px;
+    gap: 0;
+  }
+  .ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideLeftSide {
+    width: 100%;
+    gap: 0;
+  }
+  .ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideRightSide {
+    display: flex;
+    justify-content: end !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+  }
+}
+@media (max-width: 1160px) {
+  .ourPlans {
+    height: 2000px;
+  }
+  .ourPlans .ourPlansCards {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    gap: 300px;
+  }
+  .ourPlans .ourPlansCards .ourPlansCard {
+    height: 254.89px;
+    width: 313.47px;
+  }
+  .ourPlans .ourPlansCards .ourPlansCard .OurTopPlans {
+    height: 260px;
+    width: 313.47px;
+    margin-top: 10px;
+    padding: 20px;
+    gap: 0px;
+  }
+  .ourPlans .ourPlansCards .ourPlansCard .OurBotPlans {
+    height: 250px;
+    width: 313.47px;
+    padding: 20px;
+  }
+}
+@media (max-width: 1120px) {
+  .feat {
+    height: 600px;
+  }
+  .feat ul {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1030px) {
+  .BefAft {
+    height: 1500px;
+  }
+  .BefAft .carousel .carousel-inner .carousel-item {
+    height: 1100px;
+    width: 90vw;
+  }
+  .BefAft .carousel .carousel-inner .carousel-item .left {
+    left: 50%;
+    top: 0;
+    display: flex;
+    width: 480px;
+    height: 458px;
+    transform: translate(-50%, 0);
+  }
+  .BefAft .carousel .carousel-inner .carousel-item .right {
+    right: 50%;
+    bottom: 0;
+    display: flex;
+    width: 480px;
+    height: 458px;
+    transform: translate(50%, 0);
+  }
+  .HIW {
+    height: 1400px;
+  }
+  .HIW .parent .icons {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .HIW .parent .icons .arrow {
+    margin-top: 10px;
+  }
+  .plans {
+    height: 1000px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .plans .leftPlans {
+    margin-top: 50px;
+    width: 50%;
+  }
+  .plans .rightPlans {
+    width: 50%;
+  }
+  .plans .rightPlans .card {
+    width: 100%;
+  }
+  .plans .rightPlans .card .topPlans button {
+    margin-top: 20px;
+    width: 50%;
+    height: 20px;
+    padding: 0;
+  }
+  .grey {
+    width: 100%;
+  }
+  .grey .greyCards {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    width: 100%;
+  }
+  .grey .greyCards .greyCard {
+    height: 376px;
+    width: 263px;
+  }
+}
+@media (max-width: 970px) {
+  .banner {
+    margin-bottom: 650px;
+    height: 1200px;
+  }
+  .banner .inBanner {
+    width: 70%;
+  }
+  .banner .blank {
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    bottom: -400px;
+    height: 700px;
+  }
+  .banner .blank h1 {
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    font-size: 33px;
+    font-weight: 350;
+    transform: translate(-50%);
+  }
+  .banner .blank .grid-container {
+    width: 90vw;
+    position: absolute;
+    top: 150px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    padding: 10px;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .banner .blank .grid-container .labelPos {
+    position: relative;
+  }
+  .banner .blank .grid-container label {
+    position: absolute;
+    top: -25px;
+    left: 30vw;
+  }
+  .banner .blank .grid-container input {
+    background-color: #fff9af;
+    border: 1px solid black;
+    width: 30vw;
+    padding: 0px;
+    border-radius: 10px;
+  }
+  .banner .blank .grid-container select {
+    background-color: #fff9af;
+    border: 1px solid black;
+    width: 30vw;
+    padding: 0px;
+    border-radius: 10px;
+  }
+  .banner .blank .grid-container #service {
+    background-color: #fff9af;
+    border: 1px solid black;
+    width: 30vw;
+    padding: 0px;
+    border-radius: 10px;
+  }
+  .banner .blank .grid-container .item1 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .banner .blank .grid-container .item2 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .banner .blank .grid-container .item3 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .banner .blank .grid-container .item4 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .banner .blank .grid-container .item5 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .banner .blank .grid-container .item6 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 6;
+  }
+  .banner .blank .grid-container .item7 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 7;
+  }
+  .banner .blank .grid-container .item8 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 8;
+  }
+  .banner .blank .grid-container .item9 {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: row;
+    grid-column: 1;
+    grid-row: 9;
+  }
+  .banner .blank .grid-container .item9 button {
+    border: 1px solid #0a2323;
+    background-color: #0a2323;
+    color: white;
+    padding: 10px 9.5%;
+    border-radius: 40px;
+    transition: 0.5s;
+  }
+  .banner .blank .grid-container .item9 button:hover {
+    border: 1px solid #0a2323;
+    background-color: #fff9af;
+    color: black;
+    transition: 0.5s;
+  }
+  footer {
+    height: 1009px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+  }
+  footer .div1 {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+  }
+  footer .div1 #divButton {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: center !important;
+  }
+  footer .div1 #divButton svg {
+    height: 16px;
+    width: 16px;
+    color: white !important;
+  }
+  footer .div1 #book {
+    height: 56px;
+    width: 194px;
+    border: 1px solid #0a2323;
+    background-color: #0a2323;
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  footer .div1 #book p {
+    color: white;
+  }
+  footer .div1 #book:hover {
+    background-color: #fff9af;
+    transition: 0.5;
+  }
+  footer .div1 #book:hover p {
+    color: black;
+  }
+  footer .div2 {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+  }
+  footer .div2 ul {
+    display: flex;
+    justify-content: start !important;
+    align-items: start !important;
+    align-content: center !important;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  footer .div3 {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+  }
+  footer .div3 ul {
+    display: flex;
+    justify-content: start !important;
+    align-items: start !important;
+    align-content: center !important;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+  footer .div3_2 {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+  }
+  footer .div3_2 ul {
+    display: flex;
+    justify-content: start !important;
+    align-items: start !important;
+    align-content: center !important;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    gap: 22px;
+  }
+  footer .div4 {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex-direction: column;
+  }
+  footer .div4 ul {
+    display: flex;
+    justify-content: start !important;
+    align-items: start !important;
+    align-content: center !important;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .ourServices {
+    margin-top: 100px;
+    height: 3600px;
+  }
+  .ourServices .ourServiceTitle {
+    margin-bottom: -100px;
+  }
+  .ourServices .ourServicesBooking {
+    flex-direction: column;
+    gap: 70px;
+  }
+  .ourServices .ourServicesBooking .ourServicesInside {
+    flex-direction: column;
+    height: 280px;
+  }
+  .ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideLeftSide {
+    flex-direction: column;
+    width: 100%;
+  }
+  .ourServices .ourServicesBooking .ourServicesInside .ourServicesInsideRightSide {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
